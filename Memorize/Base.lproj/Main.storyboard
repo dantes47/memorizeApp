@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,6 +51,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aay-jV-kVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1068.1159420289855" y="-12.053571428571429"/>
+        </scene>
+        <!--Memory View Controller-->
+        <scene sceneID="APU-Za-kS7">
+            <objects>
+                <viewController storyboardIdentifier="MemoryViewController" id="SXp-Fl-IYP" customClass="MemoryViewController" customModule="Memorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjw-nW-wy1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rs7-W2-oSe">
+                                <rect key="frame" x="50" y="44" width="314" height="837"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ofz-8X-2Hh" firstAttribute="trailing" secondItem="Rs7-W2-oSe" secondAttribute="trailing" constant="50" id="5qW-Df-yZC"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="top" secondItem="ofz-8X-2Hh" secondAttribute="top" id="HRf-Qz-kVm"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="bottom" secondItem="ofz-8X-2Hh" secondAttribute="bottom" constant="19" id="Nka-LR-cUQ"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="leading" secondItem="ofz-8X-2Hh" secondAttribute="leading" constant="50" id="Pni-RM-C12"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="leading" secondItem="ofz-8X-2Hh" secondAttribute="leading" constant="50" id="cmw-UR-Lsq"/>
+                            <constraint firstItem="ofz-8X-2Hh" firstAttribute="trailing" secondItem="Rs7-W2-oSe" secondAttribute="trailing" constant="50" id="g4h-z7-P1R"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="bottom" secondItem="ofz-8X-2Hh" secondAttribute="bottom" constant="19" id="k24-Ta-FsO"/>
+                            <constraint firstItem="Rs7-W2-oSe" firstAttribute="top" secondItem="ofz-8X-2Hh" secondAttribute="top" id="res-ch-zyd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ofz-8X-2Hh"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Rs7-W2-oSe" id="qyd-Qc-mjy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBm-Wy-Ojp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.1159420289857" y="-8.0357142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gld-9a-byy">
