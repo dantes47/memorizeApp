@@ -13,6 +13,8 @@ class MemoryViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     var item: MemoryItem!
     
+    var blankCounter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +24,19 @@ class MemoryViewController: UIViewController {
     
     func showText()
     {
-        textView.text = item.text
+        let words = item.text.components(separatedBy: " ")
+        var output = ""
+        
+        for (index, word) in words.enumerated() {
+            if index < blankCounter {
+                output += "\(word) "
+            } else {
+                let blank = String(repeating: "_", count: word.count)
+                output += "\(blank) "
+            }
+        }
+        
+        textView.text = output
     }
     
 
