@@ -18,12 +18,16 @@ class MemoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        assert(item != nil, "You should provide a memory item before trying to show this view controller..)")
+        assert(item != nil, "You should provide a memory item before trying to show this view controller..")
         showText()
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action:
+            #selector(wordsTapped))
+        textView.addGestureRecognizer(tapRecognizer)
     }
     
-    func showText()
-    {
+    func showText() {
+    
         let words = item.text.components(separatedBy: " ")
         var output = ""
         
@@ -39,5 +43,9 @@ class MemoryViewController: UIViewController {
         textView.text = output
     }
     
+    @objc func wordsTapped() {
+        blankCounter += 1
+        showText()
+    }
 
 }
