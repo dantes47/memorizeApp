@@ -14,6 +14,7 @@
 		214BFD61245DDB6F000FD48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214BFD60245DDB6F000FD48D /* Assets.xcassets */; };
 		214BFD64245DDB6F000FD48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214BFD62245DDB6F000FD48D /* LaunchScreen.storyboard */; };
 		214BFD6F245DDB6F000FD48D /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214BFD6E245DDB6F000FD48D /* MemorizeTests.swift */; };
+		215068B9246895CD00B053B8 /* MemoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215068B8246895CD00B053B8 /* MemoryDataSource.swift */; };
 		2198F5A1245EFB1F0085D55A /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2198F5A0245EFB1F0085D55A /* Items.json */; };
 		2198F5A3245F034E0085D55A /* MemoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198F5A2245F034E0085D55A /* MemoryItem.swift */; };
 		2198F5A7245F1A060085D55A /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2198F5A6245F1A060085D55A /* MemoryViewController.swift */; };
@@ -41,6 +42,7 @@
 		214BFD6A245DDB6F000FD48D /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		214BFD6E245DDB6F000FD48D /* MemorizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeTests.swift; sourceTree = "<group>"; };
 		214BFD70245DDB6F000FD48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		215068B8246895CD00B053B8 /* MemoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDataSource.swift; sourceTree = "<group>"; };
 		2198F5A0245EFB1F0085D55A /* Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
 		2198F5A2245F034E0085D55A /* MemoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryItem.swift; sourceTree = "<group>"; };
 		2198F5A6245F1A060085D55A /* MemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				214BFD57245DDB6B000FD48D /* AppDelegate.swift */,
 				214BFD5B245DDB6B000FD48D /* ViewController.swift */,
+				215068B8246895CD00B053B8 /* MemoryDataSource.swift */,
 				214BFD5D245DDB6B000FD48D /* Main.storyboard */,
 				2198F5A6245F1A060085D55A /* MemoryViewController.swift */,
 				214BFD60245DDB6F000FD48D /* Assets.xcassets */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214BFD5C245DDB6B000FD48D /* ViewController.swift in Sources */,
+				215068B9246895CD00B053B8 /* MemoryDataSource.swift in Sources */,
 				214BFD58245DDB6B000FD48D /* AppDelegate.swift in Sources */,
 				214BFD5A245DDB6B000FD48D /* SceneDelegate.swift in Sources */,
 				2198F5A3245F034E0085D55A /* MemoryItem.swift in Sources */,
